@@ -14,25 +14,28 @@ export default function What() {
         </div>
 
         {/* Bento Grid Design */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2 bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-between min-h-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          {/* SaaS Solutions Card */}
+          <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-between h-full">
             <div className="p-3 bg-white rounded-2xl w-fit shadow-sm text-raspberry"><LayoutGrid className="h-6 w-6" /></div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">SaaS Architecture Solutions</h3>
-              <p className="text-charcoal/70 text-sm max-w-md">We are curating a sophisticated ecosystem of cloud-native applications designed to automate the laborious nuances of enterprise management. From intelligent payroll orchestration to fluid procurement cycles, our services diminish administrative friction while amplifying fiscal stewardship. We offer more than mere software; we provide the robust, future-proof foundation necessary for scalable growth in a volatile commercial landscape.</p>
+            <div className="mt-6">
+              <h3 className="text-2xl font-bold mb-2">SaaS Solutions</h3>
+              <p className="text-charcoal/70 text-sm max-w-md">We are currently engineering a proprietary, stealth-mode ecosystem of cloud-native architectures designed to automate the high-friction realities of enterprise management. Forged directly from decades of cross-functional operational command and complex financial forensics, this upcoming platform orchestrates intelligent payroll, automated procurement, and predictive controllership into a single, seamless digital engine. We are not merely building software; we are constructing the core technological infrastructure required to capture massive B2B inefficiencies and scale premium recurring value. While the architecture remains secure under wrap during its final high-yield development phase, the framework is engineered from day zero to maximize enterprise unit economics and redefine operational margins in a volatile global market.</p>
             </div>
           </div>
 
-          <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-between">
+          {/* Consulting Services Card */}
+          <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col justify-between h-full">
             <div className="p-3 bg-white rounded-2xl w-fit shadow-sm text-raspberry"><Shield className="h-6 w-6" /></div>
-            <div>
+            <div className="mt-6">
               <h3 className="text-xl font-bold mb-2">Consulting Services</h3>
-              <p className="text-charcoal/70 text-sm">We orchestrate a disruptive suite of elite advisory and backend operations engineered to dismantle the legacy bottlenecks of corporate growth. From day-zero corporate setups and aggressive AR/AP optimization to forensic cleanup initiatives and ironclad internal audits, our virtual controllership framework transforms chaotic backend administration into precise mathematical leverage. We offer more than standard bookkeeping and tax compliance; we deliver the unyielding, battle-tested financial architecture essential for hyper-scale market dominance</p>
+              <p className="text-charcoal/70 text-sm">We orchestrate a disruptive suite of elite, tech-enabled advisory and automated backend operations engineered to dismantle the legacy bottlenecks of corporate growth. By fusing advanced operational software scaling with rigorous, digitized financial command, we transform chaotic administration into precise mathematical leverage. From day-zero corporate setups and SaaS-powered HR integrations to cross-functional workflow automation, aggressive AR/AP optimization, and ironclad, tech-driven internal control frameworks, our virtual controllership ecosystem leaves no room for inefficiency. We offer far more than automated bookkeeping, digital payroll deployment, and cloud-based FBR tax compliance; we deliver an unyielding, battle-tested digital and financial architecture. Whether securing complex ERF bank borrowings, deploying international ERP enterprise software, or engineering strict digital document control protocols, we provide the ruthless technological execution and infrastructure essential for hyper-scale market dominance</p>
             </div>
           </div>
 
           {/* POLYGEM NEXUS TEASER CARD */}
-          <div className="md:col-span-3 bg-gradient-to-br from-charcoal to-neutral-900 text-white p-10 rounded-3xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl shadow-charcoal/10">
+          <div className="md:col-span-2 bg-gradient-to-br from-charcoal to-neutral-900 text-white p-10 rounded-3xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl shadow-charcoal/10">
             <div className="absolute top-0 right-0 w-96 h-96 bg-raspberry/10 rounded-full blur-3xl pointer-events-none" />
             
             <div className="max-w-xl space-y-4">
@@ -45,7 +48,7 @@ export default function What() {
               </p>
             </div>
             
-            <div className="w-full md:w-auto shrink-0">
+            <div className="w-full md:w-auto shrink-0 z-10">
               <div className="bg-white/5 border border-white/10 backdrop-blur-md px-6 py-4 rounded-2xl text-center">
                 <span className="block text-2xl font-bold text-raspberry animate-pulse">In Development</span>
                 <span className="text-xs text-white/50 tracking-wide">Nexolith | The Briefcase</span>

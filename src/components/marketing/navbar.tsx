@@ -11,8 +11,11 @@ export default function Navbar() {
     { name: "Services", href: "#services" }, // Fixed: Scroll to section, not new page
     { name: "Why", href: "#why" },
     { name: "What", href: "#what" },
-        { name: "Where", href: "#where" },
+    { name: "Where", href: "#where" },
     { name: "How", href: "#how" },
+    { name: "Team", href: "#team" },
+    { name: "Arcade", href: "#arcade" },
+
   ];
 
   return (
