@@ -220,7 +220,7 @@ export default function GamesUtility() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center p-4 md:p-8 font-sans selection:bg-blue-500/30">
+    <div id="arcade" className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center p-4 md:p-8 font-sans selection:bg-blue-500/30">
       
       {/* Master Hub Header */}
       <div className="w-full max-w-4xl mb-8 flex flex-col md:flex-row justify-between items-center gap-4">

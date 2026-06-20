@@ -11,16 +11,16 @@ export default function How() {
   ];
 
   return (
-    <section id="how" className="py-24 bg-white px-6">
+    <section id="how" className="py-24 bg-background px-6 transition-colors duration-500">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h2 className="text-xs uppercase font-bold tracking-widest text-raspberry mb-3">How We Build</h2>
-          <p className="text-3xl md:text-4xl font-bold tracking-tight text-charcoal">
+          <p className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             Strategic Roadmap Timeline
           </p>
         </div>
 
-        <div className="relative border-l border-gray-200 ml-4 md:ml-32 space-y-12">
+        <div className="relative border-l border-border ml-3 md:ml-32 space-y-12">
           {steps.map((step, i) => (
             <motion.div
               key={i}
@@ -31,7 +31,7 @@ export default function How() {
               className="relative pl-8"
             >
               {/* Outer circle dot */}
-              <div className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-raspberry bg-white flex items-center justify-center">
+              <div className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-raspberry bg-background flex items-center justify-center">
                 <div className="h-1.5 w-1.5 rounded-full bg-raspberry" />
               </div>
               
@@ -40,12 +40,12 @@ export default function How() {
                 {step.phase}
               </div>
 
-              <div className="bg-gray-50/70 border border-gray-100 p-6 rounded-2xl hover:bg-gray-50 transition-colors duration-200">
+              <div className="bg-card border border-border p-6 rounded-2xl hover:bg-muted transition-colors duration-200 shadow-sm">
                 <span className="inline-block md:hidden text-xs font-bold uppercase tracking-wider text-raspberry mb-1">
                   {step.phase}
                 </span>
-                <h4 className="text-lg font-bold text-charcoal mb-2">{step.title}</h4>
-                <p className="text-sm text-charcoal/70 leading-relaxed">{step.desc}</p>
+                <h4 className="text-lg font-bold text-foreground mb-2">{step.title}</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
               </div>
             </motion.div>
           ))}

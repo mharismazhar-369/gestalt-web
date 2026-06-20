@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link"; 
+// 1. Import localFont
+import localFont from 'next/font/local';
+
+// 2. Point directly to the public folder using a forward slash
+const companyFont = localFont({ 
+  src: '/Spaceage.ttf', 
+  display: 'swap',
+});
 
 export default function Hero() {
   return (
@@ -31,34 +39,37 @@ export default function Hero() {
         </motion.div>
 
         {/* BADGE */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-flex items-center gap-2 bg-primary/5 border border-primary/20 shadow-sm px-4 py-1.5 rounded-full mb-6"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-8"
         >
-          <span className="text-xs font-bold text-primary uppercase tracking-widest">Startup Stage 01</span>
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+          </span>
+          Start Up Phasse 01
         </motion.div>
         
-        {/* HEADLINE */}
-        <motion.h1 
-          initial={{ opacity: 0, filter: "blur(8px)", y: 10 }}
-          animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-black tracking-tight text-foreground mb-6 leading-[1.15]"
-        >
-          Gestalt Technologies <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60 drop-shadow-sm">
-            (Private) Limited
+        {/* HEADLINE WITH CUSTOM FONT */}
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-foreground drop-shadow-sm">
+          <br className="hidden md:block" />
+          {/* THE FIX: Added style={companyFont.style} and font-normal */}
+          <span 
+            style={companyFont.style}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-teal-500 to-purple-600 font-normal tracking-normal"
+          >
+            Gestalt Technologies
           </span>
-        </motion.h1>
+        </h1>
 
-        {/* PARAGRAPH */}
-        <motion.p 
+        {/* SUBTITLE */}
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-lg md:text-xl font-medium text-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed bg-muted/50 p-5 rounded-2xl border border-border/50"
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed bg-muted/50 p-5 rounded-2xl border border-border/50"
         >
           Your chaos, our code. From enterprise SaaS to workflow consulting, we serve up structurally perfect digital solutions on a single platter. Cause we understand Market Psychology.
         </motion.p>

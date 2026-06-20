@@ -51,9 +51,9 @@ export default function Navbar() {
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="hidden sm:block">
             {/* Fixed: Wrapped in mailto link */}
-            <a href="mailto:info@gestalttechnologies.com"> 
+            <a href="mailto:gestalttech.pltd@gmail.com"> 
               <Button className="rounded-full bg-primary text-primary-foreground hover:opacity-90 px-6 font-bold shadow-md transition-all">
-                Contact Showroom
+                Contact Gestalt
               </Button>
             </a>
           </motion.div>

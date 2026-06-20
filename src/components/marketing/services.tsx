@@ -25,8 +25,8 @@ const servicesData = [
   { id: "06", title: "Payroll", desc: "Automated payroll administration.", icon: <Users /> },
   { id: "07", title: "Closing", desc: "Monthly & annual closing cycles.", icon: <Target /> },
   { id: "08", title: "Virt. Accountant", desc: "Dedicated virtual accounting support.", icon: <BookOpen /> },
-  { id: "09", title: "Virt. Controller", desc: "High-level controller oversight.", icon: <Brain /> },
-  { id: "10", title: "HST/GST", desc: "Compliance & tax filings.", icon: <CheckCircle /> },
+  { id: "09", title: "Virt. C-Suit", desc: "High-level controller oversight & services.", icon: <Brain /> },
+  { id: "10", title: "Tax", desc: "Compliance & tax filings.", icon: <CheckCircle /> },
   { id: "11", title: "Backend Ops", desc: "Virtual backend management.", icon: <Settings /> },
   { id: "12", title: "SaaS Impl.", desc: "Strategic SaaS implementation.", icon: <Zap /> },
   { id: "13", title: "Workflow Auto.", desc: "Seamless workflow automation.", icon: <Workflow /> },
@@ -41,7 +41,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Operational Ecosystem</h2>
-          <p className="text-4xl md:text-5xl font-black text-foreground">Deputized Capabilities</p>
+          <p className="text-4xl md:text-5xl font-black text-foreground">Our Capabilities</p>
         </div>
 
         {/* 14 CARDS GRID - Now fully editable */}

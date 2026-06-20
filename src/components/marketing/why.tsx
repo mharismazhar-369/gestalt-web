@@ -11,11 +11,11 @@ export default function Why() {
   ];
 
   return (
-    <section id="why" className="py-24 bg-gray-50/50 px-6 border-y border-gray-100">
+    <section id="why" className="py-24 bg-muted/30 px-6 border-y border-border transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-xs uppercase font-bold tracking-widest text-raspberry mb-3">Why Gestalt</h2>
-          <p className="text-3xl md:text-4xl font-bold tracking-tight text-charcoal">
+          <p className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             The Philosophy Driving Our Services & Solutions
           </p>
         </div>
@@ -29,11 +29,11 @@ export default function Why() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <Card className="border-none shadow-sm bg-white rounded-2xl overflow-hidden hover:shadow-md transition-shadow duration-300">
+              <Card className="border border-border shadow-sm bg-card rounded-2xl overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <CardContent className="p-8 flex flex-col items-start">
                   <div className="p-3 rounded-2xl bg-raspberry/5 mb-6">{pillar.icon}</div>
-                  <h3 className="text-xl font-bold text-charcoal mb-3">{pillar.title}</h3>
-                  <p className="text-sm text-charcoal/70 leading-relaxed">{pillar.desc}</p>
+                  <h3 className="text-xl font-bold text-foreground mb-3">{pillar.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm text-justify">{pillar.desc}</p>
                 </CardContent>
               </Card>
             </motion.div>
