@@ -40,7 +40,8 @@ export default function How() {
                 {step.phase}
               </div>
 
-              <div className="bg-card border border-border p-6 rounded-2xl hover:bg-muted transition-colors duration-200 shadow-sm">
+              {/* Glowing Theme-driven Card Component */}
+              <div className="bg-card border border-border p-6 rounded-2xl cursor-pointer hover:border-raspberry hover:shadow-raspberry/30 hover:shadow-[0_0_25px_var(--tw-shadow-color)] transition-all duration-300 shadow-sm">
                 <span className="inline-block md:hidden text-xs font-bold uppercase tracking-wider text-raspberry mb-1">
                   {step.phase}
                 </span>
