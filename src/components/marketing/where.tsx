@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "motion/react";
 import { Globe, Users } from "lucide-react";
-
+import localFont from 'next/font/local';
+const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 export default function Where() {
   return (
     <section id="where" className="py-24 bg-muted/30 px-6 border-y border-border transition-colors duration-500">

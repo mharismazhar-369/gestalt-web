@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "motion/react";
 import { Briefcase, Award } from "lucide-react";
 import Image from "next/image";
-
+import localFont from 'next/font/local';
+const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 export default function TeamSection() {
   return (
     <section id="team" className="py-20 bg-background text-foreground border-t border-border">
@@ -11,7 +12,7 @@ export default function TeamSection() {
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-4">
+          <h2 style={companyFont.style} className="text-3xl font-normal tracking-tight sm:text-4xl mb-4 text-foreground">
             Leadership & Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -28,7 +29,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="border border-primary/20 bg-primary/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm"
+            className="border border-primary/20 bg-primary/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:border-primary/60 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1"
           >
             <div>
               <div className="flex items-center gap-4 mb-6">
@@ -64,7 +65,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="border border-teal-500/20 bg-teal-500/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm"
+            className="border border-teal-500/20 bg-teal-500/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:border-teal-500/60 hover:shadow-lg hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-1"
           >
             <div>
               <div className="flex items-center gap-4 mb-6">
@@ -100,7 +101,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="border border-purple-500/20 bg-purple-500/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm"
+            className="border border-purple-500/20 bg-purple-500/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:border-purple-500/60 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-1"
           >
             <div>
               <div className="flex items-center gap-3 mb-4 text-purple-600 dark:text-purple-400">
@@ -129,7 +130,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="border border-foreground/20 bg-foreground/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm"
+            className="border border-foreground/20 bg-foreground/5 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:border-foreground/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             <div>
               <div className="flex items-center gap-3 mb-4 text-foreground">

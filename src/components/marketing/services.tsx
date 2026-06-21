@@ -1,12 +1,9 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { 
-  Target, Zap, Brain, ShieldCheck, Calculator, FileText, 
-  BookOpen, Users, BarChart3, Settings, Workflow, CheckCircle, 
-  Globe, Briefcase 
-} from "lucide-react";
-
+import {   Target, Zap, Brain, ShieldCheck, Calculator, FileText,   BookOpen, Users, BarChart3, Settings, Workflow, CheckCircle,   Globe, Briefcase } from "lucide-react";
+import localFont from 'next/font/local';
+const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 // 1. ADD YOUR IMAGE PATHS HERE
 const slides = [
   "/slide-1.jpg", 
@@ -40,8 +37,8 @@ export default function Services() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">Operational Ecosystem</h2>
-          <p className="text-4xl md:text-5xl font-black text-foreground">Our Capabilities</p>
+          <h2 style={companyFont.style} className="text-xs font-normal uppercase tracking-widest text-primary mb-3">Operational Ecosystem</h2>
+<p style={companyFont.style} className="text-4xl md:text-5xl font-normal text-foreground">Our Capabilities</p>
         </div>
 
         {/* 14 CARDS GRID - Now fully editable */}
@@ -50,7 +47,7 @@ export default function Services() {
             <motion.div 
               key={node.id} 
               whileHover={{ y: -5 }}
-              className="p-5 rounded-3xl border border-border/50 bg-muted/30 shadow-sm flex flex-col justify-between"
+              className="p-5 rounded-3xl border border-border/50 bg-muted/30 shadow-sm hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="flex justify-between items-center mb-4">
                 <span className="text-xs font-bold opacity-60">Node {node.id}</span>

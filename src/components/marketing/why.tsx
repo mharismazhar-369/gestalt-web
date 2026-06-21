@@ -2,7 +2,8 @@
 import { motion } from "motion/react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Crown, Eye, Sparkles, Sword, Target } from "lucide-react";
-
+import localFont from 'next/font/local';
+const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 export default function Why() {
   const pillars = [
     { icon: <Sword className="h-6 w-6 text-raspberry" />, title: "VENI: Disruptive Presence", desc: "We don't wait for invitations or market validation." },
@@ -14,8 +15,8 @@ export default function Why() {
     <section id="why" className="py-24 bg-muted/30 px-6 border-y border-border transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-xs uppercase font-bold tracking-widest text-raspberry mb-3">Why Gestalt</h2>
-          <p className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+          <h2 style={companyFont.style} className="text-xs uppercase font-normal tracking-widest text-primary mb-3">Why Gestalt</h2>
+<p style={companyFont.style} className="text-3xl md:text-4xl font-normal tracking-tight text-foreground">
             The Philosophy Driving Our Services & Solutions
           </p>
         </div>
@@ -29,7 +30,7 @@ export default function Why() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <Card className="border border-border shadow-sm bg-card rounded-2xl overflow-hidden hover:shadow-md transition-shadow duration-300">
+              <Card className="border border-border shadow-sm bg-card rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-8 flex flex-col items-start">
                   <div className="p-3 rounded-2xl bg-raspberry/5 mb-6">{pillar.icon}</div>
                   <h3 className="text-xl font-bold text-foreground mb-3">{pillar.title}</h3>

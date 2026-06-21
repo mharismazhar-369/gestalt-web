@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-
+import localFont from 'next/font/local';
+const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 export default function How() {
   const steps = [
     { phase: "Phase 01", title: "Inception & Incorporation", desc: "At Phase 1 we had an idea and a plan which gave birth to Gestalt Technologies" },
@@ -40,8 +41,7 @@ export default function How() {
                 {step.phase}
               </div>
 
-              {/* Glowing Theme-driven Card Component */}
-              <div className="bg-card border border-border p-6 rounded-2xl cursor-pointer hover:border-raspberry hover:shadow-raspberry/30 hover:shadow-[0_0_25px_var(--tw-shadow-color)] transition-all duration-300 shadow-sm">
+              <div className="bg-card border border-border p-6 rounded-2xl hover:bg-muted transition-colors duration-200 shadow-sm">
                 <span className="inline-block md:hidden text-xs font-bold uppercase tracking-wider text-raspberry mb-1">
                   {step.phase}
                 </span>
