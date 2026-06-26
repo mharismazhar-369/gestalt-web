@@ -113,7 +113,7 @@ export default function MazeLab({ onScore }: MazeLabProps) {
   const solveBFS = useCallback((start: Position, goal: Position, b: Cell[][]) => {
     if (b.length === 0) return null;
     const visited = Array.from({ length: size }, () => Array(size).fill(false));
-    const parent = Array.from({ length: size }, () => Array(size).fill<Position | null>(null));
+    const parent = Array.from({ length: size }, () => Array(size).fill(null) as (Position | null)[]);
     const q: Position[] = [start];
     
     visited[start.r][start.c] = true;
