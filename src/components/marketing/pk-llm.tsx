@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from "motion/react";
 import { Terminal, Cpu, Send, Sparkles, AlertTriangle, Globe } from "lucide-react";
 import localFont from 'next/font/local';
-import { GESTALT_MEMORY } from './gestaltMemory';
 
 const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 
