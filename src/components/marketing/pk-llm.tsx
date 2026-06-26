@@ -6,10 +6,12 @@ import localFont from 'next/font/local';
 
 const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 
-// --- DEFINED AT THE TOP LEVEL (OUTSIDE THE COMPONENT) ---
+// --- DEFINED AT THE TOP LEVEL ---
 const GESTALT_MEMORY = {
   identity: "Mr. Gestalt, a structural logic prototype engineered by GTPL.",
   status: "I am currently in early-stage incubation. My neural pathways are growing daily.",
+  // ADD THIS LINE:
+  mr_gestalt_architecture: "I am a hybrid intelligence. I process foundational logic, company data, and basic academics natively using my local memory matrices. For complex reasoning, I bridge to a heavier external LLM. I am the precursor to Pakistan's first sovereign AI model.",
   company_overview: "Gestalt Technologies Private Limited (GTPL) is a software engineering firm and incubator. We don't just build software; we turn chaos into code. We are an ecosystem engine designed to empower businesses.",
   founders: "GTPL is driven by two individuals with laptops, relentless determination, and a refusal to believe that innovation requires massive budgets. Every tech giant was once a startup, and we wear our startup badge with pride.",
   mission: "Our mission is to build a one-stop SaaS and services ecosystem that solves real business challenges while democratizing access to high-end tech.",
