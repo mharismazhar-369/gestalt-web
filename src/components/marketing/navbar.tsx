@@ -7,7 +7,7 @@ import { ThemeToggle } from "../../../components/theme-toggle"; // Your correct 
 
 export default function Navbar() {
   const links = [
-    { name: "Gestalt Tech", href: "#home" },
+    { name: "GTPL", href: "#home" },
     { name: "Services", href: "#services" }, // Fixed: Scroll to section, not new page
     { name: "Why", href: "#why" },
     { name: "What", href: "#what" },
@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: "How", href: "#how" },
     { name: "Team", href: "#team" },
     { name: "Arcade", href: "#arcade" },
+    { name: "Mr. Gestalt", href: "#pk-llm" },
 
   ];
 

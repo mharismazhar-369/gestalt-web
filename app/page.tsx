@@ -7,6 +7,7 @@ import Where from "@/src/components/marketing/where";
 import How from "@/src/components/marketing/how";
 import Team from "@/src/components/marketing/team";
 import GameArcade from "@/src/components/marketing/gamearcade";
+import PkLlm from "@/src/components/marketing/pk-llm";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
         <How />
         <Team />
         <GameArcade />
+        <PkLlm />
       </main>
       
       {/* THEME FIX: bg-white changed to bg-background, border-gray-100 changed to border-border */}
