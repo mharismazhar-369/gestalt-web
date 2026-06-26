@@ -23,7 +23,7 @@ export default function SnakeLab({ onScore }: { onScore: (pts: number) => void }
     lastRenderTime: 0
   });
 
-  const reqRef = useRef<number>();
+  const reqRef = useRef<number | null>(null);
 
   const spawnFood = useCallback(() => {
     let valid = false;
