@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { GESTALT_MEMORY } from './gestaltMemory'; 
+import { GESTALT_MEMORY } from '@/src/components/marketing/gestaltMemory'; 
 
 export async function POST(request: Request) {
   try {
