@@ -6,6 +6,20 @@ import localFont from 'next/font/local';
 
 const companyFont = localFont({ src: '/Spaceage.ttf', display: 'swap' });
 
+// --- DEFINED AT THE TOP LEVEL (OUTSIDE THE COMPONENT) ---
+const GESTALT_MEMORY = {
+  identity: "Mr. Gestalt, a structural logic prototype engineered by GTPL.",
+  status: "I am currently in early-stage incubation. My neural pathways are growing daily.",
+  company_overview: "Gestalt Technologies Private Limited (GTPL) is a software engineering firm and incubator. We don't just build software; we turn chaos into code. We are an ecosystem engine designed to empower businesses.",
+  founders: "GTPL is driven by two individuals with laptops, relentless determination, and a refusal to believe that innovation requires massive budgets. Every tech giant was once a startup, and we wear our startup badge with pride.",
+  mission: "Our mission is to build a one-stop SaaS and services ecosystem that solves real business challenges while democratizing access to high-end tech.",
+  vision: "We are developing Pakistan's first sovereign, indigenous Large Language Model. The field is dominated by giants, but we are proving that meaningful innovation starts in garages, not just boardrooms.",
+  hero_summary: "We don't just build software; we turn chaos into code. GTPL is an ecosystem engine designed to empower businesses.",
+  why_gtpl: "Why us? Because we combine underdog agility with enterprise-grade logic. We build faster, pivot quicker, and engineer solutions with raw dedication.",
+  arcade: "The Nexus Terminal Arcade is where we showcase our logic engines! You can play XO Tactics, Maze Labs, and Tactical Chess—all engineered to run natively in your browser.",
+  warning: "⚠️ [SYSTEM NOTICE]: Query exceeds local knowledge base."
+};
+
 type Message = { role: 'user' | 'ai' | 'system'; text: string };
 
 const SUGGESTED_PROMPTS = [
